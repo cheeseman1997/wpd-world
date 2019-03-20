@@ -45,8 +45,8 @@
    "size": 10477
   },
   "js/all.js": {
-   "sha512": "3282ca9e18aa1c1e6612c2ec4bc1f71b6ee40f0f06764586cc1acf5d8d155b45",
-   "size": 246417
+   "sha512": "011c61102c05b4c79566f12ffd94a0950d990ae5731623788c53d22f8985cd39",
+   "size": 246423
   },
   "languages/da.json": {
    "sha512": "822c90a229d428db7ad2a9e421bfb80f57bae8b58cb6fd45df407b1aee0fbd5f",
@@ -93,7 +93,7 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1553090718,
+ "modified": 1553091587,
  "postmessage_nonce_security": true,
  "settings": {
   "admin": "xynixia",
@@ -103,7 +103,7 @@
  },
  "signers_sign": "G7i/zKX3SaY77yxsjuECeR+Gln8I1t+lpxwIgRdPIBN/OKhA8JjfVx6HZHFn0kdiu2wKo0/YGtQ95fYeRgSYcIQ=",
  "signs": {
-  "1P7FMP3qngJxRhJidG2C41faCo6yozj2KJ": "G83OS6uD996wfUUFG6hS3PrYpyJge5pDM0Nxi0Nut/kRJjxNyTU87veX7L+kEdFrtf8jji0iOOEor5leB2t+BiY="
+  "1P7FMP3qngJxRhJidG2C41faCo6yozj2KJ": "HGx3G2kENx8w4z4QO5P+zLu48EITMvLN3m9IXXYpMhxfBO4rXa03aoZXyMoOq//OBT6xKHYJJgNvl4pqSuMRQFY="
  },
  "signs_required": "1:14JMe2K9H9F9DwFi2s6tuwiQT66FY7H1dg,1NqmcCyRVM9TsQQueXQCZkhCdRc5cHH1k3",
  "title": "WPD Talk",

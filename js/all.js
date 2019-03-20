@@ -2078,7 +2078,7 @@ jQuery.extend( jQuery.easing,
       })(this));
       $(".collapse", elem).on("click", (function(_this) {
         return function(e) {
-          return $(e.target).parents(".comment").children(".body, .replies").toggleClass("collapsed");
+          return $($(e.target).parents(".comment")[0]).children(".body, .replies").toggleClass("collapsed");
         };
       })(this));
       return $(".menu_3dot", elem).on("click", (function(_this) {
