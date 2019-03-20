@@ -290,7 +290,7 @@ input.text:focus, textarea:focus { border-color: #5FC0EA; outline: none; backgro
 
 /* Messages */
 .comments { margin-bottom: 60px }
-.comment { background-color: white; padding: 15px 25px; margin: 1px; border-bottom: 1px solid #EEE; -webkit-backface-visibility: hidden ; -moz-backface-visibility: hidden ; -o-backface-visibility: hidden ; -ms-backface-visibility: hidden ; backface-visibility: hidden  }
+.comment { background-color: white; padding: 15px 0 15px 15px; margin: 1px; border-left: 2px solid #EEE; -webkit-backface-visibility: hidden ; -moz-backface-visibility: hidden ; -o-backface-visibility: hidden ; -ms-backface-visibility: hidden ; backface-visibility: hidden  }
 .comment .user_name { font-size: 14px }
 .comment .added { color: #AAA }
 .comment .menu_3dot { float: right; padding: 0px 5px }
@@ -313,6 +313,8 @@ input.text:focus, textarea:focus { border-color: #5FC0EA; outline: none; backgro
 .comment .body blockquote a { color: #333 }
 .comment .body table { border-collapse: collapse; margin-bottom: 10px }
 .comment .body td, .comment .body th { padding: 5px 10px; border: 1px solid #EEE; border-collapse: collapse; text-align: left }
+.comment .collapse { color: #AAA; font-family: monospace }
+.comment .collapsed { display: none; }
 
 .comment-new { margin-bottom: 5px }
 .comment-new .button-submit { }

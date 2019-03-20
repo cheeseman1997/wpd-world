@@ -2073,6 +2073,11 @@ jQuery.extend( jQuery.easing,
           return _this.buttonReply($(e.target).parents(".comment"));
         };
       })(this));
+      $(".collapse", elem).on("click", (function(_this) {
+        return function(e) {
+          return $(e.target).parents(".comment").children(".body, .replies").toggleClass("collapsed");
+        };
+      })(this));
       return $(".menu_3dot", elem).on("click", (function(_this) {
         return function() {
           var menu;
@@ -2130,7 +2135,7 @@ jQuery.extend( jQuery.easing,
       this.log("Reply to", elem);
       post_id = elem.attr("id");
       this.log("Post id", post_id);
-      user_name = $("#"+post_id).children().closest('.info').children().closest('.user_name').html();
+      user_name = $("#"+post_id).children().closest('.info').children().closest('.user_name').children("a").html();
       body_add = "> [" + user_name + "](\#" + post_id + "): ";
       elem_quote = $(".body", elem).clone();
       $("blockquote", elem_quote).remove();
