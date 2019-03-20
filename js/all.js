@@ -2110,26 +2110,26 @@ jQuery.extend( jQuery.easing,
         }
       }*/
       user_name = comment.user_name;
-      $(".body", elem).html(Text.toMarked(comment.body, {
+      $(".body:first", elem).html(Text.toMarked(comment.body, {
         "sanitize": true
       }));
       //.attr("href", "http://127.0.0.1:43110/Mail.ZeroNetwork.bit/?to=" + user_name.replace(/@.*/, ""))
-      $(".user_name > a", elem).text(user_name.replace(/@.*/, "")).css({
+      $(".user_name > a:first", elem).text(user_name.replace(/@.*/, "")).css({
         "color": Text.toColor(user_name)
       }).attr("title", user_name + ": " + comment.user_address);
-      $(".added", elem).text(Time.since(comment.added)).attr("title", Time.date(comment.added, "long"));
+      $(".added:first", elem).text(Time.since(comment.added)).attr("title", Time.date(comment.added, "long"));
       comment_uri = elem.attr("id").replace("comment_", "");
       if (User.my_comment_votes[comment_uri] == 1) {
-        $(".score-inactive .score-num", elem).text(comment.votes - 1);
-        $(".score-active .score-num", elem).text(comment.votes);
-        $(".score", elem).addClass("active");
+        $(".score-inactive .score-num:first", elem).text(comment.votes - 1);
+        $(".score-active .score-num:first", elem).text(comment.votes);
+        $(".score:first", elem).addClass("active");
       } else if (User.my_comment_votes[comment_uri] == -1) {
-        $(".score-inactive .scored-num", elem).text(comment.votes - 1);
-        $(".score-active .scored-num", elem).text(comment.votes);
-        $(".scored", elem).addClass("active");
+        $(".score-inactive .scored-num:first", elem).text(comment.votes - 1);
+        $(".score-active .scored-num:first", elem).text(comment.votes);
+        $(".scored:first", elem).addClass("active");
       } else {
-        $(".score-inactive .score-num", elem).text(comment.votes);
-        $(".score-active .score-num", elem).text(comment.votes + 1);
+        $(".score-inactive .score-num:first", elem).text(comment.votes);
+        $(".score-active .score-num:first", elem).text(comment.votes + 1);
       }
       if (comment.user_address === Page.site_info.auth_address || is_mod) {
         $(elem).attr("data-object", "Comment:" + comment_uri + "@" + this.topic_uri).attr("data-deletable", "yes");
