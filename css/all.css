@@ -150,6 +150,7 @@ a.nolink:active { border-bottom: none }
 .link:active .link-url { border-bottom: 0.1em solid #333 }
 
 .user_name { font-weight: bold; color: #666 }
+.distinguish { background: #5B5; color: #FFF; padding: 0 5px; border-radius: 5px }
 .userbullet { color: #AAA; }
 
 .user_menu { color: black }

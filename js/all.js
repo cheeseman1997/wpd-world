@@ -1704,11 +1704,12 @@ jQuery.extend( jQuery.easing,
         type = "list";
       }
       
-      /*for(var i = 0; i < Page.site_info.content.settings.mods.length; i++) {
-        if(Page.site_info.content.settings.mods[i] == Page.site_info.cert_user_id) {
+      for(var i = 0; i < Page.site_info.content.settings.mods.length; i++) {
+        if(Page.site_info.content.settings.mods[i] == topic.topic_creator_user_name) {
           is_mod = true;
+          break;
         }
-      }*/
+      }
       
       title_hash = Text.toUrl(topic.title);
       topic_uri = topic.row_topic_uri;
@@ -1760,7 +1761,9 @@ jQuery.extend( jQuery.easing,
           $(".added", elem).text(Time.since(last_action));
         }
       }
-      $(".user_name", elem).text(topic.topic_creator_user_name.replace(/@.*/, "")).attr("title", topic.topic_creator_user_name + ": " + topic.topic_creator_address);
+      $(".user_name", elem).text(topic.topic_creator_user_name.replace(/@.*/, "")).attr("title", (is_mod ? "[Mod] " : "") + topic.topic_creator_user_name + ": " + topic.topic_creator_address);
+      if(is_mod)
+        $(".user_name", elem).addClass("distinguish");
       window.TopicList.applyTopicListeners(elem, topic);
       
       if (User.my_topic_votes[topic_uri] == 1) {
@@ -1792,7 +1795,7 @@ jQuery.extend( jQuery.easing,
         $(".subtopic", elem).css("display", "block");
         $(".subtopic-link", elem).attr("href", "?Topic:" + subtopic_uri + "/" + subtopic_title_hash).text(topic.row_topic_sub_title);
       }
-      if (topic.topic_creator_address === Page.site_info.auth_address || is_mod) {
+      if (topic.topic_creator_address === Page.site_info.auth_address) {
         $(elem).attr("data-object", "Topic:" + topic_uri).attr("data-deletable", "yes");
         $(".title .title-link", elem).attr("data-editable", "title").data("content", topic.title);
         return $(".body", elem).attr("data-editable", "body").data("content", topic.body);
