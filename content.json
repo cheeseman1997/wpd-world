@@ -8,9 +8,13 @@
  "cloned_from": "1TaLkFrMwvbNsooF4ioKAY9EuxTBTjipT",
  "description": "Discussion forum for WPD",
  "files": {
+  "README.md": {
+   "sha512": "3f0b4b6c5208e80d0d8f8270a3789243a06676524a6828e2bd6cae34fb7c5c9e",
+   "size": 265
+  },
   "css/all.css": {
-   "sha512": "576da276a6ca3dc0765d1c34811ffd6f2833699db9a6ff811e19448a39288ab1",
-   "size": 172529
+   "sha512": "14dc552526a899ce77895a4c99f30ea34c02054c813b398892eacc0052ca641a",
+   "size": 173096
   },
   "data-default/users/content-default.json": {
    "sha512": "c1642cc2922a74c3e74991f0194e2acc46dc5e003207a0028dad63c75c41a0ec",
@@ -41,8 +45,8 @@
    "size": 10477
   },
   "js/all.js": {
-   "sha512": "441db14cab9e11d0cbcfc3e8899e5f2032cca33587ad09703690242797ac3298",
-   "size": 243402
+   "sha512": "3282ca9e18aa1c1e6612c2ec4bc1f71b6ee40f0f06764586cc1acf5d8d155b45",
+   "size": 246417
   },
   "languages/da.json": {
    "sha512": "822c90a229d428db7ad2a9e421bfb80f57bae8b58cb6fd45df407b1aee0fbd5f",
@@ -89,7 +93,7 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1553081824,
+ "modified": 1553090718,
  "postmessage_nonce_security": true,
  "settings": {
   "admin": "xynixia",
@@ -99,7 +103,7 @@
  },
  "signers_sign": "G7i/zKX3SaY77yxsjuECeR+Gln8I1t+lpxwIgRdPIBN/OKhA8JjfVx6HZHFn0kdiu2wKo0/YGtQ95fYeRgSYcIQ=",
  "signs": {
-  "1P7FMP3qngJxRhJidG2C41faCo6yozj2KJ": "G2Mt869REOMha/BzPHlwzcy3baMpyxnPafROCYertdWIFBG/nsux0t8V6Iw2E3okSeIefNDQ9YBz1Uzv9+AVVhA="
+  "1P7FMP3qngJxRhJidG2C41faCo6yozj2KJ": "G83OS6uD996wfUUFG6hS3PrYpyJge5pDM0Nxi0Nut/kRJjxNyTU87veX7L+kEdFrtf8jji0iOOEor5leB2t+BiY="
  },
  "signs_required": "1:14JMe2K9H9F9DwFi2s6tuwiQT66FY7H1dg,1NqmcCyRVM9TsQQueXQCZkhCdRc5cHH1k3",
  "title": "WPD Talk",
